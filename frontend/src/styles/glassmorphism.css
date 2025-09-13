@@ -1,0 +1,415 @@
+/* Page background helper */
+.main-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f5f7fa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Auth card container */
+.auth-container {
+  background: rgba(45, 33, 90, 0.97);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 48px 40px 32px 40px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.auth-container h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.auth-container .subheading {
+  color: #c3b8e5;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.auth-container form {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #e0e7ff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-field input[type="email"],
+.form-field input[type="password"],
+.form-field input[type="text"] {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #5a4a8a;
+  border-radius: 7px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #3c2e6e;
+  color: #fff;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-field input:focus {
+  border: 1.5px solid #4fc3f7;
+}
+
+.form-field input::placeholder {
+  color: #a093c7;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.auth-button {
+  background-color: #4fc3f7;
+  color: #051937;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-button:hover {
+  background-color: #67d8ff;
+}
+
+.auth-container .switch-link {
+  margin-top: 18px;
+  font-size: 0.98rem;
+  color: #bdb7e5;
+}
+
+.auth-container .switch-link a {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.auth-container .switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .auth-container {
+    padding: 32px 10px 24px 10px;
+    max-width: 98vw;
+  }
+}
+
+.flip-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;     /* Full viewport height */
+  width: 100vw;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flip container and back face styles (keeping them for animation) */
+.flip-box-container {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.flip-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-box.flipped {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    padding: 40px; /* Match auth-container padding */
+    box-sizing: border-box;
+    background-color: #2d215a; /* Match auth-container background */
+    border-radius: 15px; /* Match auth-container border-radius */
+}
+
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 30px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.glass-card input[type="email"],
+.glass-card input[type="password"],
+.glass-card input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.glass-card input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.glass-card button {
+  background: #4fc3f7;
+  color: #051937;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.glass-card button:hover {
+  background-color: #81d4fa;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.glass-card h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.glass-card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glass-card input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.permissions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Two-column layout for auth pages */
+.auth-page-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px; /* Increased max-width for the entire container */
+  border-radius: 18px;
+  overflow: auto; /* Changed from hidden to auto to allow scrolling */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  min-height: 500px; /* Minimum height for the container */
+}
+
+.auth-left-section {
+  width: 40%; /* Adjust width as needed */
+  background-color: #2d215a; /* Dark purple background */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.auth-left-section h2 {
+  color: #ffffff;
+  font-size: 2.5rem; /* Larger font size for main heading */
+  margin-bottom: 15px;
+}
+
+.auth-left-section p {
+  color: #c3b8e5; /* Lighter purple text */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.auth-right-section {
+  width: 60%; /* Adjust width as needed */
+  background-color: #ffffff; /* White background for form section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Refined styles for form elements within the right section */
+.auth-right-section .auth-container {
+  background: none; /* Remove background as the section has background */
+  box-shadow: none; /* Remove shadow */
+  padding: 0; /* Remove padding as section has padding */
+  max-width: 100%; /* Allow form to take full width of the section */
+  margin: 0; /* Remove margin */
+  color: #333; /* Darker text color for white background */
+}
+
+.auth-right-section .auth-container h2 {
+  color: #333; /* Dark heading color */
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.auth-right-section .auth-container .subheading {
+  color: #666; /* Darker subheading color */
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.auth-right-section .auth-container .form-field label {
+  color: #333; /* Dark label color */
+}
+
+.auth-right-section .form-field input[type="email"],
+.auth-right-section .form-field input[type="password"],
+.auth-right-section .form-field input[type="text"] {
+  border: 1px solid #ccc; /* Lighter border */
+  background-color: #f9f9f9; /* Slightly off-white background */
+  color: #333; /* Dark text */
+}
+
+.auth-right-section .form-field input::placeholder {
+  color: #aaa;
+}
+
+.auth-right-section .auth-button {
+  background-color: #007bff; /* Primary blue button */
+  color: #fff;
+}
+
+.auth-right-section .auth-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-right-section .auth-container .switch-link {
+  color: #666;
+}
+
+.auth-right-section .auth-container .switch-link a {
+  color: #007bff; /* Primary blue link color */
+}
+
+.auth-right-section .auth-container .switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* Adjust flip box to fit within the right section */
+.auth-right-section .flip-box-container {
+    width: 100%;
+    height: auto; /* Allow height to adjust to content */
+    min-height: 400px; /* Minimum height */
+}
+
+.auth-right-section .flip-box,
+.auth-right-section .flip-box-front,
+.auth-right-section .flip-box-back {
+    position: static; /* Remove absolute positioning */
+    width: 100%;
+    height: auto; /* Allow height to adjust to content */
+    backface-visibility: visible; /* Keep both sides visible in layout */
+    transform-style: flat; /* Remove 3D transform for layout */
+    transition: none; /* Remove transition for layout */
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Remove background */
+    border-radius: 0; /* Remove border-radius */
+}
+
+.auth-right-section .flip-box-back {
+    transform: rotateY(0deg); /* Reset rotation */
+}
+
+/* Re-apply flip behavior within the right section if desired, but adjust classes */
+/* This part would need more complex JS/React logic to manage flipping within the layout */

@@ -1,0 +1,17 @@
+node_modules
+# Ignore Python virtual environments
+venv/
+backend/venv/
+
+# Ignore uploaded APKs
+*.apk
+
+# Ignore binary libraries
+*.dll
+*.lib
+*.pyd
+
+# Ignore build or deployment artifacts
+*.exe
+*.zip
+*.tar

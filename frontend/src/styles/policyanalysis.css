@@ -1,0 +1,94 @@
+/* Policy Analysis Page Styles */
+.policy-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 50%, #ffe4e6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.policy-card {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(124,58,237,0.10);
+  padding: 3rem 2.5rem;
+  max-width: 1200px;
+  min-width: 320px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 4rem auto 0 auto;
+}
+.policy-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  color: #7c3aed;
+  line-height: 1.1;
+}
+.policy-desc {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 2.2rem;
+  line-height: 1.5;
+}
+.policy-textarea {
+  width: 100%;
+  min-height: 120px;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid #e0e7ff;
+  margin-bottom: 1.5rem;
+  resize: vertical;
+  background: #f3f4f6;
+  color: #333;
+  transition: border 0.2s;
+}
+.policy-textarea:focus {
+  border: 1.5px solid #7c3aed;
+  outline: none;
+}
+.policy-btn {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 1.2rem;
+  border: none;
+  background: #7c3aed;
+  color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(124,58,237,0.10);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-bottom: 1rem;
+}
+.policy-btn:disabled {
+  background: #ede9fe;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.policy-btn:hover:not(:disabled) {
+  background: #5b21b6;
+}
+.policy-error {
+  color: #e11d48;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.policy-result {
+  margin-top: 2rem;
+  background: #f3e8ff;
+  border-radius: 1.2rem;
+  padding: 1.5rem 3rem;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 600px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 8px 0 rgba(124,58,237,0.06);
+  word-break: break-word;
+  margin-left: auto;
+  margin-right: auto;
+} 
