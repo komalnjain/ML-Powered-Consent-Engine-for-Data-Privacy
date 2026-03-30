@@ -20,8 +20,6 @@
 - [🚀 Getting Started](#-getting-started)
 - [💡 Use Cases](#-use-cases)
 - [🔮 Future Enhancements](#-future-enhancements)
-- [📝 License](#-license)
-- [👨‍💻 Author](#-author)
 
 ---
 
