@@ -8,8 +8,8 @@ print("=== USING UPDATED RISK CALCULATOR ===")
 class RiskCalculator:
     def __init__(self):
         # Use absolute paths to guarantee the model and vectorizer are found
-        model_path = r'D:/consent-engine-web/ml/training_scripts/ml/models/risk_model_20250607_234152.pkl'
-        vectorizer_path = r'D:/consent-engine-web/ml/training_scripts/ml/models/feature_vectorizer_20250607_234152.pkl'
+        model_path = r'E:/ML-Powered Privacy consent Engine/ML-Powered-Consent-Engine-for-Data-Privacy/ml/training_scripts/ml/models/risk_model_20250607_234152.pkl'
+        vectorizer_path = r'E:/ML-Powered Privacy consent Engine/ML-Powered-Consent-Engine-for-Data-Privacy/ml/training_scripts/ml/models/feature_vectorizer_20250607_234152.pkl'
         print(f"Loading model from: {model_path}")
         self.model = joblib.load(model_path)
         self.vectorizer = joblib.load(vectorizer_path)
