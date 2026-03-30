@@ -5,7 +5,6 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square)
 ![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ---
 
@@ -107,7 +106,7 @@ This tool is essential for **app security researchers**, **privacy advocates**, 
 </tr>
 <tr>
 <td><img src="images/Risk Analysis Metrics.png" alt="Risk Analysis Metrics" width="100%"/></td>
-<td><img src="images/Risk Analysis Metrics 2.png" alt="Risk Analysis Metrics 2" width="100%"/></td>
+<td><img src="images/Risk Analysis Metrics 2.png" alt="Risk Analysis Metrics" width="100%"/></td>
 </tr>
 </table>
 
@@ -117,7 +116,7 @@ This tool is essential for **app security researchers**, **privacy advocates**, 
 <td align="center"><b>Policy Analysis</b></td>
 </tr>
 <tr>
-<td><img src="images/Risk Analysis PDF.png" alt="Risk Analysis PDF" width="100%"/></td>
+<td><img src="images/Risk Analysis PDF.png" alt="Risk Analysis" width="100%"/></td>
 <td><img src="images/Policy Analysis.png" alt="Policy Analysis" width="100%"/></td>
 </tr>
 </table>
@@ -129,7 +128,7 @@ This tool is essential for **app security researchers**, **privacy advocates**, 
 </tr>
 <tr>
 <td><img src="images/Policy Analysis Metrics.png" alt="Policy Analysis Metrics" width="100%"/></td>
-<td><img src="images/Policy Analysis Metrics 2.png" alt="Policy Analysis Metrics 2" width="100%"/></td>
+<td><img src="images/Policy Analysis Metrics 2.png" alt="Policy Analysis Metrics" width="100%"/></td>
 </tr>
 </table>
 
@@ -138,7 +137,7 @@ This tool is essential for **app security researchers**, **privacy advocates**, 
 <td align="center"><b>Permission Optimizer</b></td>
 </tr>
 <tr>
-<td><img src="images/Permission Optimizer.png" alt="Permission Optimizer" width="100%"/></td>
+<td><img src="images/Permision Optimizer.png" alt="Permission Optimizer" width="100%"/></td>
 </tr>
 </table>
 
